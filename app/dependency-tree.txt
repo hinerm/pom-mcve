@@ -1,0 +1,34 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building App foo 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ appfoo ---
+[INFO] foo:appfoo:pom:1.0
+[INFO] +- org.scijava:scijava-common:jar:2.39.0:runtime
+[INFO] |  +- com.googlecode.gentyref:gentyref:jar:1.1.0:runtime
+[INFO] |  \- org.bushe:eventbus:jar:1.4:runtime
+[INFO] +- foo:buzz:jar:1.0:runtime
+[INFO] |  +- (org.scijava:scijava-common:jar:2.39.0:runtime - version managed from 2.25.0; omitted for duplicate)
+[INFO] |  \- io.scif:scifio:jar:0.21.1:runtime (version managed from 0.17.0)
+[INFO] |     +- io.scif:scifio-jai-imageio:jar:1.1.0:runtime
+[INFO] |     +- net.imagej:imagej-common:jar:0.12.2:runtime
+[INFO] |     |  +- (net.imglib2:imglib2:jar:2.2.0:runtime - omitted for duplicate)
+[INFO] |     |  +- net.imglib2:imglib2-roi:jar:0.2.0:runtime
+[INFO] |     |  |  \- (net.imglib2:imglib2:jar:2.1.0:runtime - omitted for conflict with 2.2.0)
+[INFO] |     |  +- (org.scijava:scijava-common:jar:2.39.0:runtime - version managed from 2.38.1; omitted for duplicate)
+[INFO] |     |  \- edu.ucar:udunits:jar:4.3.18:runtime
+[INFO] |     +- net.imglib2:imglib2:jar:2.2.0:runtime
+[INFO] |     +- (org.scijava:scijava-common:jar:2.39.0:runtime - version managed from 2.38.1; omitted for duplicate)
+[INFO] |     \- org.mapdb:mapdb:jar:1.0.3:runtime
+[INFO] \- foo:fizz:jar:1.0:runtime
+[INFO]    +- (org.scijava:scijava-common:jar:2.39.0:runtime - version managed from 2.37.0; omitted for duplicate)
+[INFO]    \- (io.scif:scifio:jar:0.21.1:runtime - version managed from 0.20.0; omitted for duplicate)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.776 s
+[INFO] Finished at: 2015-03-20T10:58:04-05:00
+[INFO] Final Memory: 8M/81M
+[INFO] ------------------------------------------------------------------------

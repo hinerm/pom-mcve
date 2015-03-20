@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>foo</groupId>
+		<artifactId>pom-foo</artifactId>
+		<version>1.1</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>pom-fizz</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+
+	<name>pom-fizz</name>
+	<description>test parent pom</description>
+
+	<properties>
+		<fizz.version>1.0</fizz.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>foo</groupId>
+				<artifactId>fizz</artifactId>
+				<version>${fizz.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

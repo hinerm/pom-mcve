@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>foo</groupId>
+	<artifactId>pom-foo</artifactId>
+	<packaging>pom</packaging>
+	<version>1.2</version>
+
+	<name>pom-foo</name>
+	<description>test parent pom</description>
+
+	<properties>
+		<!-- Direct dep -->
+		<scijava-common.version>2.39.0</scijava-common.version>
+
+		<!-- Transient dep -->
+		<scifio.version>0.21.1</scifio.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Direct dep -->
+			<dependency>
+				<groupId>org.scijava</groupId>
+				<artifactId>scijava-common</artifactId>
+				<version>${scijava-common.version}</version>
+			</dependency>
+
+			<!-- Transient dep -->
+			<dependency>
+				<groupId>io.scif</groupId>
+				<artifactId>scifio</artifactId>
+				<version>${scifio.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

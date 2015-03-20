@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>foo</groupId>
+		<artifactId>pom-foo</artifactId>
+		<version>1.2</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>appfoo</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<name>App foo</name>
+	<description>test app</description>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- buzz -->
+			<dependency>
+				<groupId>foo</groupId>
+				<artifactId>pom-buzz</artifactId>
+				<version>1.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- fizz -->
+			<dependency>
+				<groupId>foo</groupId>
+				<artifactId>pom-fizz</artifactId>
+				<version>1.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- Direct -->
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- buzz -->
+		<dependency>
+			<groupId>foo</groupId>
+			<artifactId>buzz</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- fizz -->
+		<dependency>
+			<groupId>foo</groupId>
+			<artifactId>fizz</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+
+</project>

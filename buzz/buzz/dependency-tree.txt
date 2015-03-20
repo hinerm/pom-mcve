@@ -1,0 +1,29 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Buzz 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ buzz ---
+[INFO] foo:buzz:jar:1.0
+[INFO] +- org.scijava:scijava-common:jar:2.25.0:compile
+[INFO] |  +- com.googlecode.gentyref:gentyref:jar:1.1.0:compile
+[INFO] |  \- org.bushe:eventbus:jar:1.4:compile
+[INFO] \- io.scif:scifio:jar:0.17.0:compile
+[INFO]    +- io.scif:scifio-jai-imageio:jar:1.1.0:compile
+[INFO]    +- net.imagej:imagej-common:jar:0.10.0:compile
+[INFO]    |  +- (net.imglib2:imglib2:jar:2.0.1:compile - omitted for duplicate)
+[INFO]    |  +- net.imglib2:imglib2-roi:jar:0.1.0:compile
+[INFO]    |  |  \- (net.imglib2:imglib2:jar:2.0.1:compile - omitted for duplicate)
+[INFO]    |  +- (org.scijava:scijava-common:jar:2.25.0:compile - version managed from 2.35.0; omitted for duplicate)
+[INFO]    |  \- edu.ucar:udunits:jar:4.3.18:compile
+[INFO]    +- net.imglib2:imglib2:jar:2.0.1:compile
+[INFO]    +- (org.scijava:scijava-common:jar:2.25.0:compile - version managed from 2.35.0; omitted for duplicate)
+[INFO]    \- org.mapdb:mapdb:jar:1.0.3:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.758 s
+[INFO] Finished at: 2015-03-20T10:49:18-05:00
+[INFO] Final Memory: 8M/81M
+[INFO] ------------------------------------------------------------------------
